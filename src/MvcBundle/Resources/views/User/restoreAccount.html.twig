@@ -1,0 +1,96 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}
+   Forgot Password | Can't Log In | Symfony
+{% endblock %}
+
+{% block menu %}
+
+        <form action="/profile" method="POST">
+            <table   id="log_in_tbl">
+                <tbody>
+                <tr>
+                    <td>
+                        <label for="log_user">Username</label>
+                    </td>
+                    <td>
+                        <label for="log_pass">Password</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="text" name="username"  class="log_input" id="log_user" value=""/>
+                    </td>
+                    <td>
+                        <input type="password" name="password"  class="log_input" id="log_pass" value=""/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <button type="submit" class="log_in_btn">Log in</button>
+                    </td>
+                </tr>
+                </tbody>
+                <div style="color: red">{{ error }}</div>
+            </table>
+        </form>
+{% endblock %}
+
+{% block body %}
+
+    <div class="content">
+        <div class="wrapper">
+            <div id="container">
+
+                <div id="restore_page">
+                    <div id="restore_form">
+                        <form rel="async" id="" action="" method="post">
+
+                            <input type="hidden" name="lsd" value="AVpNn13t" autocomplete="off">
+                            <div>
+                                <h2 class="uiHeaderTitle" aria-hidden="true">Find Your Account</h2>
+                            </div>
+
+                            <div class="phl ptm uiInterstitialContent">
+                                <div class="identify_yourself_block">
+                                    <table>
+                                        <tbody>
+                                        <tr>
+                                            <td>
+                                                <label for="restore_input">
+                                                    <div class="please_enter">Please enter your email or phone number to search for your account.</div>
+                                                </label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="text" class="inputtext" id="restore_input" name="email" placeholder="Email or phone" aria-label="Email or phone">
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="clearfix">
+                                <label class="uiButton uiButtonConfirm uiButtonNoText" id="did_submit" for="u_0_3">
+                                    <input value="Search" type="submit" id="restore_search_btn">
+                                </label>
+                                <a href="/login">
+                                    <span class="uiButtonText">Cancel</span>
+                                </a>
+                                <div class="pts">
+
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}
+    Phones list
+{% endblock %}
+
+{% block body %}
+
+    <div class="content">
+        <div class="wrapper">
+            <div id="container">
+                <div class="phones_div">
+                    <div class="phones_image_post">
+                        <div>
+                            <a href="/addPhone">Add phone</a>
+                        </div>
+
+                        {% for value in phones %}
+                            <div class="phones_all">
+                                <a href="/showOnePhone/{{ value.id }}"  class="phone_title">
+                                    <h3>{{ value.title }}</h3>
+                                </a>
+                                <div class="phone_img">
+                                    <a href="/showOnePhone/{{ value.id }}">
+                                        <img src="images/phones/{{ value.image }}"/>
+                                    </a>
+                                </div>
+                            </div>
+
+                        {% endfor %}
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+{% endblock %}
+

@@ -1,0 +1,130 @@
+{% extends '::base.html.twig' %}
+
+{% block title %}
+    Your profile page
+{% endblock %}
+
+{% block login %}
+    <ul>
+        <li style="cursor: pointer"><div class="destroy_session">Log out</div></li>
+    </ul>
+{% endblock %}
+
+{% block body %}
+
+    <div class="content">
+        <div class="wrapper">
+            <div id="container">
+
+                <div class="modal-new">
+                    <div id="dialog">
+                        <div id="answer">
+                            <div class="answer">Are you sure you want to exit</div>
+                            <div class="close_icon"> X</div>
+                        </div>
+
+                        <div>
+                            <button id="yes">Yes</button>
+                            <button id="no">No</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="user_page">
+                    <div id="user_content">
+                        <div id="user_info">
+
+                            <form class="img_upload_form" method="POST" enctype="multipart/form-data" action="{{ path('file_file_homepage') }}">
+                                <h2 class="form_signin_heading">Upload image</h2>
+                                <div id="user_photo">
+                                    <input type="file" name="choose_image" value="choose_image">
+                                    <button class="upload_btn">Upload</button>
+                                </div>
+                            </form>
+
+
+                            <div id="user_name">
+                                {% for user in res %}
+                                    {{ user['firstname'] }}
+                                    {{ user['lastname'] }}
+                                {% endfor %}
+                            </div>
+
+                            <div>
+                                {% for user in res %}
+                                    {{ user['email'] }}
+                                {% endfor %}
+                            </div>
+
+                            <div>
+                                {% for user in res %}
+                                    {{ user['gender'] }}
+                                {% endfor %}
+                            </div>
+
+                            <div>
+                                {% for user in res %}
+                                    {{ user['username'] }}
+                                {% endfor %}
+                            </div>
+
+                            <div>
+                                {% for user in res %}
+                                    {{ user['password'] }}
+                                {% endfor %}
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}
+
+{% block footer %}
+    <div class="wrapper">
+
+        <div id="pageFooter">
+
+            <ul class="lang">
+                <li>
+                    <a href="#" title="English">English (US)</a>
+                </li>
+
+                <li>
+                    <a href="#" title="Russian">Русский</a>
+                </li>
+                <li>
+                    <a href="#" title="Armenian">Հայերեն</a>
+                </li>
+                <li>
+                    <a href="#" title="French (France)">Français (France)</a>
+                </li>
+                <li>
+                    <a href="#" title="German">Deutsch</a>
+                </li>
+                <li>
+                    <a href="#" title="Arabic">العربية</a>
+                </li>
+                <li>
+                    <a href="#" title="Spanish (Spain)">Español (España)</a>
+                </li>
+                <li>
+                    <a href="#" title="Turkish">Türkçe</a>
+                </li>
+                <li>
+                    <a href="#" title="Portuguese (Brazil)">Português (Brasil)</a>
+                </li>
+                <li>
+                    <a href="#" title="Italian">Italiano</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+{% endblock %}

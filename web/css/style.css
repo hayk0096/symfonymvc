@@ -1,0 +1,590 @@
+body {
+    background-image: url("../../web/images/home/bg2.jpg") ;
+    font: 18px/1.5 Arial,Helvetica,sans-serif;
+    margin: 0;
+    color: #333;
+}
+body::-webkit-scrollbar{
+    width: 1%;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: aqua;
+}
+ul {
+    list-style-type: none;
+    float: left;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+a:active {
+    color: #ff1f08;
+}
+a:hover{
+    color: #777777;
+}
+#menu a:hover {
+    color: #fff;
+}
+
+h2 {
+    font-size: 21px;
+    margin-bottom: 1em;
+}
+p {
+    margin: 0 0 1em 0;
+}
+label{
+    cursor: pointer;
+    color: #056a9a;
+}
+#registration input{
+    border: 1px solid #bdc7d8;
+    border-radius: 5px;
+    padding: 3%;
+}
+ #header {
+    background: #4eb125;
+     opacity: 0.8;
+    width: 100%;
+    min-height: 100px;
+}
+.header {
+    width: 100%;
+    margin: 0 auto;
+    min-height: 100px;
+}
+.content{
+    width: 70%;
+    margin: 0 auto;
+    background: white;
+    opacity: 0.8;
+}
+
+
+/*  Home  page */
+
+#home_title {
+    display: inline-block;
+    float: left;
+    padding-right: 10%;
+    margin-top: 1.5%;
+}
+
+#home_title h1 {
+    font-size: 40px;
+    margin: 0;
+    color: #056a9a;
+}
+.head {
+    margin-left: 3%;
+}
+.header_img{
+    width: 6%;
+    margin: 1.5%;
+    display: inline-block;
+    float: left;
+}
+.header_img img{
+    width: 100%;
+    height: 100%;
+}
+
+.home_menu {
+    display: inline-block;
+    margin-top: 3%;
+}
+
+/* end  Home page*/
+
+
+/*  Login page */
+
+#login_page{
+    width: 100%;
+    padding-top: 15%;
+}
+#login_form {
+    width: 50%;
+    margin: 0 auto;
+}
+.log_form_div{
+    border: 1px solid #bdc7d8;
+}
+.log_into_mvc{
+    padding: 4%;
+    text-align: center;
+    margin: 0  auto;
+    color: #000;
+}
+.login_tbl{
+    margin: 0 auto;
+    width: 65%;
+}
+.log_sign_input{
+    font-size: 14px;
+    padding: 2% 30% 2% 2%;
+    border: 1px solid #2d7ea5;
+    border-radius: 5px;
+    margin-bottom: 2%;
+}
+.login_btn{
+    border: 1px solid #056a9a;
+    border-radius: 5px;
+    background-color: #056a9a;
+    color: white;
+    width: 80%;
+    padding: 2%;
+    margin-bottom: 2%;
+    cursor: pointer;
+}
+.recover button {
+    background-color: #079207;
+    border: 1px solid #bdc7d8;
+    border-radius: 3px;
+}
+.recover button a{
+    color: white;
+}
+.recover button a:hover{
+    color: #bdc7d8;
+}
+/*  end login page*/
+
+
+/*  Log_and_reg  page*/
+
+#connect_friends{
+    width: 50%;
+    display: inline-block;
+    float: left;
+    font-family: serif;
+}
+.conn_friends_title {
+    margin: 0 0 15% 8%;
+}
+.conn_friends_title h2{
+    font-size: 28px;
+    line-height: 36px;
+    padding-bottom: 9%;
+    color: black;
+}
+.mtl {
+    margin-top: 3%;
+    display: inline-block;
+}
+.pbm{
+    margin-bottom: 2%;
+}
+.img_update{
+    text-align: center;
+    width: 9%;
+    margin-right: 3%;
+    display: inline-block;
+    float: left;
+}
+.img_update img{
+    vertical-align: middle;
+    width: 100%;
+}
+#registration{
+    width: 45%;
+    display: inline-block;
+    font-family: serif;
+}
+.reg_submit_btn{
+    width: 68%;
+    color: white;
+    background-color: #079207;
+    cursor: pointer;
+}
+.free_sign {
+    font-size: 30px;
+    color: black;
+}
+.sign_up{
+    color: black;
+}
+.log_in_btn{
+    border: 1px solid #056a9a;
+    border-radius: 5px;
+    background-color: #47ab2e;;
+    color: white;
+    width: 30%;
+    padding: 2%;
+}
+#log_in_tbl{
+    margin-left: 50%;
+}
+#log_in_tbl tbody{
+    margin-left: 3%;
+    font-size: 90%;
+    font-family: serif;
+}
+
+#birthday-help {
+    font-size: 70%;
+}
+
+.birthday_select {
+    border: 1px solid #bdc7d8;
+    font-size: 13px;
+    height: 30px;
+    padding: 5px;
+}
+
+.log_input{
+    width: 80%;
+    border: 1px solid #47ab2e;
+    padding: 1.5%;
+    border-radius: 5px;
+}
+
+._58mt{
+    line-height: 18px;
+    padding: 0 10px 0 3px;
+}
+/* end Log in page */
+
+
+/* Registration page*/
+
+#reg_log_form{
+    display: none;
+}
+.reg_log_btn button{
+    margin: 4% 0 0 30%;
+    border: 1px solid #2d7ea5;
+    border-radius: 3px;
+    background-color: #2d7ea5;
+    color: white;
+}
+
+/* end registration page*/
+
+
+/*  Profile page */
+.modal-new{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 3200;
+    background-color: rgba(0,0,0,.8);
+    text-align: center;
+    overflow: hidden;
+    display: none;
+
+}
+#answer{
+    width: 100%;
+    padding: 1.5% 0 9% 0;
+}
+.answer{
+    width: 90%;
+    float: left;
+}
+ #dialog{
+     border: 1px solid aqua;
+     background: aqua;
+     position: relative;
+     display: inline-block;
+     width: 25%;
+     height: 120px;
+     margin: 17% 0 0 7%;
+}
+
+.close_icon {
+    cursor: pointer;
+    top: auto;
+    margin-left: 22px;
+    background-position: 0 -16px;
+    background-size: 16px 32px;
+}
+
+#yes,#no {
+    width: 22%;
+    margin-right: 3%;
+}
+
+
+.user_photo{
+    border: 1px solid blue;
+    width: 30%;
+}
+.user_photo img{
+    width: 100%;
+}
+
+/* end profile page */
+
+
+
+/* Restore page */
+
+#restore_page{
+    width: 100%;
+}
+#restore_form{
+    width: 72%;
+}
+.please_enter{
+    font-size: 14px;
+}
+#restore_input{
+    width: 50%;
+    padding: 1%;
+    border: 1px solid #2d7ea5;
+    border-radius: 5px;
+    font-size: 13px;
+    letter-spacing: 0.3px;
+}
+#restore_search_btn{
+    cursor: pointer;
+    color: white;
+    background-color: #2d7ea5;
+    border: 1px solid #2d7ea5;
+    border-radius: 4px;
+    padding: 1% 2%;
+}
+/* end restore page*/
+
+
+/* phones page */
+
+.phone_title{
+    color: #056a9a;
+}
+.phones_all{
+    width: 45%;
+    display: inline-block;
+    float: left;
+    margin: 2.5%
+}
+.phone_img{
+    width: 65%;
+}
+.phone_img  img{
+    width: 100%;
+    height: 100%
+}
+
+
+/*  end phones list*/
+
+
+code {
+    background: #F5F5F5;
+    max-width: 100px;
+    padding: 2px 6px;
+    word-wrap: break-word;
+}
+
+.wrapper {
+    /*background: #FFF;*/
+    margin: 0 auto;
+    width: 100%;
+}
+
+#container {
+    min-height: 520px;
+}
+
+#welcome, #status {
+    margin-bottom:4%;
+}
+
+#welcome h1 span {
+    display: block;
+    font-size: 75%;
+}
+
+#icon-status, #icon-book {
+    float: left;
+    height: 64px;
+    margin-right: 1em;
+    margin-top: -4px;
+    width: 64px;
+}
+
+#icon-book {
+    display: none;
+}
+
+@media (
+min-width: 768px
+) {
+    .wrapper {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    #icon-book {
+        display: inline-block;
+    }
+
+    #status a, #next a {
+        display: block;
+    }
+
+    @-webkit-keyframes fade-in {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    @keyframes fade-in {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    .sf-toolbar {
+        opacity: 0;
+        -webkit-animation: fade-in 1s .2s forwards;
+        animation: fade-in 1s .2s forwards;
+    }
+}
+
+
+.error{
+    color: red;
+}
+
+
+
+/*  Footer page */
+
+ #facebook ._-kb div {
+    font-family: inherit;
+}
+ #pageFooter {
+    color: #737373;
+    margin: 0 auto;
+    width: 100%;
+}
+#pageFooter div {
+    display: block;
+}
+ ._2pid {
+    padding-top: 8px;
+}
+#pageFooter ul{
+    padding-left: 0;
+}
+#pageFooter ul li{
+    list-style-type: none;
+    margin: 0 15px 0 0;
+    padding: 0;
+    display: inline-block;
+
+}
+#pageFooter ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+#pageFooter .lang{
+    padding-left: 0;
+}
+ #facebook ._-kb div {
+    font-family: inherit;
+}
+ #pageFooter {
+    color: #737373;
+}
+ #contentCurve {
+    border-bottom: 1px solid #00ffff;
+    font-size: 1px;
+    height: 8px;
+    margin-bottom: 8px;
+}
+._51mz {
+    border: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.navigationGrid {
+    line-height: 20px;
+    width: 300px;
+}
+#pageFooter tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+#pageFooter tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+    ._51mz ._51m-:first-child {
+    padding-left: 0;
+}
+    ._51mx:first-child>._51m- {
+    padding-top: 0;
+}
+    .uiGrid .hLeft {
+    text-align: left;
+}
+.navigationGrid td {
+    padding-right: 10px;
+}
+#pageFooter td{
+    font-size: 12px;
+}
+.navigationGrid {
+    line-height: 20px;
+    width: 300px;
+}
+#pageFooter a:last-child {
+    margin-right: 0;
+}
+
+#facebook ._-kb a {
+    font-family: inherit;
+}
+
+#pageFooter a {
+    white-space: nowrap;
+    color: #365899;
+    cursor: pointer;
+}
+._51mz ._51m-:first-child {
+    padding-left: 0;
+}
+.uiGrid .hLeft {
+    text-align: left;
+}
+.navigationGrid td {
+    padding-right: 10px;
+}
+#pageFooter a:last-child {
+    margin-right: 0;
+}
+#facebook ._-kb a {
+    font-family: inherit;
+}
+#pageFooter .mvl {
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.copyright {
+    text-decoration: underline;
+}
+
+/* end page footer*/
+
+

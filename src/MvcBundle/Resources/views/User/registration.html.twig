@@ -1,0 +1,185 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}
+   Symfony | Sign up
+{% endblock %}
+
+{% block menu %}
+
+    <div id="reg_log_tbl">
+
+        <div class="reg_log_btn">
+            <button>Log In Existing Account</button>
+        </div>
+
+        <div id="reg_log_form">
+            <form action="/profile" method="POST">
+                <table  id="log_in_tbl">
+                    <tbody>
+                    <tr>
+                        <td>
+                            <label for="log_user">Username</label>
+                        </td>
+                        <td>
+                            <label for="log_pass">Password</label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="text" name="username" class="log_input" id="log_user" value=""/>
+                        </td>
+                        <td>
+                            <input type="password" name="password" class="log_input" id="log_pass" value=""/>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <button type="submit" class="log_in_btn">Log In</button>
+                        </td>
+                        <td class="login_form_label_field">
+                            <div>
+                                <a href="/restore" class="restore">Forgot account?</a>
+                            </div>
+                        </td>
+                    </tr>
+
+                    </tbody>
+                    <div class="error">{{ error }}</div>
+
+                </table>
+            </form>
+        </div>
+
+    </div>
+
+
+{% endblock %}
+
+{% block body %}
+
+    <div class="content">
+
+            <div id="container">
+
+
+
+                <div id="registration">
+                    <h1 class="sign_up">Sign Up</h1>
+                    <h2 class="free_sign">It’s free and always will be.</h2>
+
+                    <form action="/register" method="post">
+                        <table>
+                            <tr>
+                                <td><input type="text" name="first_name" placeholder="First name" value="" class="f_name"/></td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="text" name="last_name" placeholder="Last name" value="" class="l_name"/></td>
+                            </tr>
+
+                            <tr>
+                                <td class="email_input">
+                                    <input type="text" name="email" placeholder="Enter your Email address" value=""/>
+                                </td>
+                            </tr>
+
+                            <div>
+                                <div>Birthday</div>
+                                <div>
+                                    <span class="_5k_4" data-type="selectors"
+                                          data-name="birthday_wrapper" id="u_0_g">
+                                        <span>
+
+                                            {# Get days #}
+                                            <select aria-label="Day" class="birthday_select" name="birthday_day" id="day" title="Day">
+                                                {% for day in days %}
+                                                    {% if day == 0 %}
+                                                        <option value="0">Day</option>
+                                                    {% else %}
+                                                        <option value="{{ day }}">{{ day }}</option>
+                                                    {% endif %}
+                                                {% endfor %}
+                                            </select>
+
+
+                                            {# Get months #}
+                                            <select aria-label="Month" class="birthday_select" name="birthday_month" id="month" title="Month">
+                                                {% for key,value in month %}
+                                                    <option value="{{ key }}">{{ value }}</option>
+                                                {% endfor %}
+                                            </select>
+
+
+                                            {# Get Years#}
+                                            <select aria-label="Year" class="birthday_select" name="birthday_year" id="year" title="Year">
+                                                <option value="0">Year</option>
+                                                {% for year in years %}
+                                                    <option value="{{ year }}">{{ year }}</option>
+                                                {% endfor %}
+
+                                            </select>
+                                        </span>
+                                    </span>
+                                    <a class="mlm _58ms" id="birthday-help" href="#" title="Click for more information">
+                                        Why do I need to provide my birthday?
+                                    </a>
+
+                                </div>
+                            </div>
+
+
+                            <div>
+                                <span>
+                                    <span class="gender_female">
+                                        <input type="radio" name="gender" value="female" id="u_0_h"/>
+                                        <label class="_58mt" for="u_0_h">Female</label>
+                                    </span>
+
+                                    <span class="gender_male">
+                                        <input type="radio" name="gender" value="male" id="u_0_i"/>
+                                        <label class="_58mt" for="u_0_i">Male</label>
+                                    </span>
+                                </span>
+
+                            </div>
+
+                            <div class="fullname_field">
+
+                                <tr>
+                                    <td><input type="text" name="username" placeholder="Username" value=""/></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="password" name="password" placeholder="Password" value=""/></td>
+                                </tr>
+                            </div>
+
+                            <tr>
+                                <td><input type="password" name="confirm_password" placeholder="Confirm password"
+                                           value=""/>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <input type="submit" name="Check in" value="Create Account" class="reg_submit_btn _3ma"/>
+                                    <input type="reset" value="Reset" class="reg_reset_btn"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="color: red">
+                                    {{ error_fill }}
+                                </td>
+                            </tr>
+                        </table>
+
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+
+
+{% endblock %}

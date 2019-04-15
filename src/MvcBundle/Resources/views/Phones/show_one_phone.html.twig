@@ -1,0 +1,26 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}
+    Phone page
+{% endblock %}
+
+{% block body %}
+
+    <div class="content">
+        <div class="wrapper">
+            <div id="container">
+
+
+                {% for phone in phones %}
+                    <h2>{{ phone.title }}</h2>
+                    <div>{{ phone.price }}</div>
+                    <div>{{ phone.image }}</div>
+                    <div>{{ phone.description }}</div>
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+

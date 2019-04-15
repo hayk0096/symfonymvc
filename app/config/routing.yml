@@ -1,0 +1,14 @@
+mvc:
+    resource: "@MvcBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+#file_file_homepage:
+#    pattern: /upload
+#    defaults: { _controller: MvcBundle:Upload:upload }
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
+
+

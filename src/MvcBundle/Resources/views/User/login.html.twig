@@ -1,0 +1,75 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}
+   Log into MVC | Symfony
+{% endblock %}
+
+{% block login %}
+    <ul>
+        <li style="cursor: pointer"><a  href="/log_and_reg" class="sign_up_li">Sign up</a></li>
+    </ul>
+{% endblock %}
+
+
+{% block body %}
+
+    <div class="content">
+
+            <div id="container">
+
+                <div id="login_page">
+
+                    <div id="login_form">
+                        <div class="log_form_div">
+                            <div class="log_into_mvc">Log into MVC</div>
+                            <form action="/profile" method="POST">
+                                <table  class="login_tbl">
+
+                                    <tbody>
+
+                                    <tr>
+                                        <td>
+                                            <input type="text" name="username" class="log_sign_input" placeholder="Email or Phone number" value=""/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="password" name="password" class="log_sign_input" placeholder="Password" value=""/>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <button type="submit" class="login_btn">Log In</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="recover">
+                                            <button><a href="/restore">Recover your account</a></button>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <a href="/registration">Sign up for Symfony</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="error">
+                                            {{ error }}
+                                        </td>
+                                    </tr>
+
+                                    </tbody>
+
+                                </table>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+{% endblock %}

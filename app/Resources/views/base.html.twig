@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %} MVC Symfony Framework{% endblock %}</title>
+
+        {% block stylesheets %}
+            <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+            <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        {% endblock %}
+
+    </head>
+
+    <body style="background:url('{{ asset('images/home/bg3.jpg') }}')">
+
+
+    <div class="wrapper">
+        {% block header %}
+
+            <div class="header">
+
+                <div id="header">
+                    <div class="head">
+                        <div class="header_img">
+                            <img src="{{ asset('images/slaq.png') }}">
+                        </div>
+                        <div id="home_title">
+                            <a href="/"><h1 title="Go to Symfony home">Symfony</h1></a>
+                        </div>
+                    </div>
+
+                    <div id="menu">
+                        {% block menu %}
+                            <div class="home_menu">
+                                <ul>
+                                    <li><a href="/listPhones">Phones</a></li>
+                                </ul>
+
+                                <ul>
+                                    <li><a href="/bookslist">Books</a></li>
+                                </ul>
+                                {% block login %}
+                                    <ul>
+                                        <li><a href="/log_and_reg">Login</a></li>
+                                    </ul>
+                                {% endblock %}
+                            </div>
+                        {% endblock %}
+                    </div>
+                </div>
+            </div>
+
+        {% endblock %}
+    </div>
+
+
+    {% block body %}
+
+        {% endblock %}
+
+
+        {% block footer %}
+
+                <div class="wrapper">
+
+                    <div id="pageFooter">
+
+                        <ul class="lang">
+                            <li>
+                                <a href="#" title="English">English (US)</a>
+                            </li>
+
+                            <li>
+                                <a href="#" title="Russian">Русский</a>
+                            </li>
+                            <li>
+                                <a href="#" title="Armenian">Հայերեն</a>
+                            </li>
+                            <li>
+                                <a href="#" title="French (France)">Français (France)</a>
+                            </li>
+                            <li>
+                                <a href="#" title="German">Deutsch</a>
+                            </li>
+                            <li>
+                                <a href="#" title="Arabic">العربية</a>
+                            </li>
+                            <li>
+                                <a href="#" title="Spanish (Spain)">Español (España)</a>
+                            </li>
+                            <li>
+                                <a href="#" title="Turkish">Türkçe</a>
+                            </li>
+                            <li>
+                                <a href="#" title="Portuguese (Brazil)">Português (Brasil)</a>
+                            </li>
+                            <li>
+                                <a href="#" title="Italian">Italiano</a>
+                            </li>
+                        </ul>
+
+                        <div id="contentCurve"></div>
+
+                        <div role="contentinfo" aria-label="Symfony site links">
+                            <table class="uiGrid _51mz navigationGrid">
+                                <tbody>
+                                <tr class="_51mx">
+                                    <td class="_51m- hLeft plm">
+                                        <a href="/registration" title="Sign Up for Symfony">Sign Up</a>
+                                    </td>
+                                    <td class="_51m- hLeft plm">
+                                        <a href="/log_and_reg" title="Log into Symfony">Log In</a>
+                                    </td>
+                                    <td class="_51m- hLeft plm">
+                                        <a href="https://messenger.com/" target="_blank"
+                                           title="Check out Messenger.">Messenger</a>
+                                    </td>
+                                    <td class="_51m- hLeft plm">
+                                        <a href="https://ru-ru.facebook.com/lite/" target="_blank"
+                                           title="Facebook Lite for Android.">Facebook Lite</a>
+                                    </td>
+                                    <td class="_51m- hLeft plm">
+                                        <a href="#" title="Check out Symfony Mobile.">Mobile</a>
+                                    </td>
+                                    <td class="_51m- hLeft plm">
+                                        <a href="#" title="Find anyone on the web.">Find Friends</a>
+                                    </td>
+                                    <td class="_51m- hLeft plm">
+                                        <a href="#" title="Browse our people directory.">People</a>
+                                    </td>
+                                    <td class="_51m- hLeft plm">
+                                        <a href="#" title="Browse our pages directory.">Pages</a>
+                                    </td>
+                                    <td class="_51m- hLeft plm">
+                                        <a href="#" title="Check out popular places on Symfony.">Places</a>
+                                    </td>
+                                    <td class="_51m- hLeft plm">
+                                        <a href="#" title="Check out Symfony games.">Games</a>
+                                    </td>
+                                    <td class="_51m- hLeft plm _51mw">
+                                        <a href="#" title="Browse our places directory.">Locations</a>
+                                    </td>
+                                </tr>
+
+                                <tr class="_51mx">
+                                    <td class="_51m- hLeft plm">
+                                        <a href="#"
+                                           title="Browse our Public Figures &amp; Celebrities directory.">Celebrities</a>
+                                    </td>
+                                    <td class="_51m- hLeft plm">
+                                        <a href="#" title="Browse our marketplace product directory.">Marketplace</a>
+                                    </td>
+                                    <td class="_51m- hLeft plm">
+                                        <a href="#" title="Browse our Groups directory.">Groups</a>
+                                    </td>
+                                    <td class="_51m- hLeft plm">
+                                        <a href="#" title="Browse our Recipes directory.">Recipes</a>
+                                    </td>
+                                    <td class="_51m- hLeft plm">
+                                        <a href="#" title="Check out Moments." target="_blank"
+                                           rel="nofollow noopener" onmouseover="">Moments</a>
+                                    </td>
+                                    <td class="_51m- hLeft plm">
+                                        <a href="#" title="Instagram">Instagram</a>
+                                    </td>
+                                    <td class="_51m- hLeft plm">
+                                        <a href="#" accesskey="8"
+                                           title="Read our blog, discover the resource center, and find job opportunities.">About</a>
+                                    </td>
+                                    <td class="_51m- hLeft plm">
+                                        <a href="#" title="Advertise on Symfony.">Create Ad</a>
+                                    </td>
+                                    <td class="_51m- hLeft plm">
+                                        <a href="#" title="Create a Page">Create Page</a>
+                                    </td>
+                                    <td class="_51m- hLeft plm">
+                                        <a href="#" title="Develop on our platform.">Developers</a>
+                                    </td>
+                                    <td class="_51m- hLeft plm _51mw">
+                                        <a href="#" title="Make your next career move to our awesome company.">Careers</a>
+                                    </td>
+                                </tr>
+
+                                <tr class="_51mx">
+                                    <td class="_51m- hLeft plm">
+                                        <a data-nocookies="1" href="#"
+                                           title="Learn about your privacy and Symfony.">Privacy</a>
+                                    </td>
+                                    <td class="_51m- hLeft plm">
+                                        <a href="#" title="Learn about cookies and Symfony.">Cookies</a>
+                                    </td>
+                                    <td class="_51m- hLeft plm">
+                                        <a class="_41ug" data-nocookies="1" href="#"
+                                           title="Learn about Ad Choices.">Ad Choices</a>
+                                    </td>
+                                    <td class="_51m- hLeft plm">
+                                        <a data-nocookies="1" href="#" accesskey="9"
+                                           title="Review our terms and policies.">Terms</a>
+                                    </td>
+                                    <td class="_51m- hLeft plm">
+                                        <a href="#" accesskey="0" title="Visit our Help Center.">Help</a>
+                                    </td>
+                                    <td class="_51m- hLeft plm">
+                                        <a class="accessible_elem" accesskey="6" href="/settings"
+                                           title="View and edit your Symfony settings.">Settings</a>
+                                    </td>
+                                    <td class="_51m- hLeft plm">
+                                        <a class="accessible_elem" accesskey="7" href="#"
+                                           title="View your activity log">Activity Log</a>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="mvl">
+                            <div>
+                                <span> Symfony © 2017  Developed by <a href="https://www.facebook.com/haykmargaryan0096" class="copyright" target="_blank">Hayk</a> </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+        {% endblock %}
+
+
+        {% block javascripts %}
+            <script src="{{ asset('js/jquery-3.2.1.min.js') }}"></script>
+            <script src="{{ asset('js/jquery-ui.js') }}"></script>
+            <script src="{{ asset('js/script.js') }}"></script>
+        {% endblock %}
+
+    </body>
+</html>
